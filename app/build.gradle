@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.hc_2'
+    namespace 'com.example.hci_mobile_library'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.hc_2"
+        applicationId "com.example.hci_mobile_library"
         minSdk 21
         targetSdk 33
         versionCode 1
