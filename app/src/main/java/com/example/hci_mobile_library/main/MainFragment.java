@@ -30,7 +30,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
         ImageButton option_button = view.findViewById(R.id.button_options);
 
-        Button button_seat = view.findViewById(R.id.button_seat_register);
+        Button button_seat_register = view.findViewById(R.id.button_seat_register);
         Button button_qr = view.findViewById(R.id.button_qr);
         Button button_notify = view.findViewById(R.id.button_notify);
         Button button_search = view.findViewById(R.id.button_search);
@@ -50,32 +50,18 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("Seat", Context.MODE_PRIVATE);
-        int seat_num = sharedPreferences.getInt("seat_num", -1);
-        if (seat_num < 0) {
-            button_seat.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    MySeatFragment mySeatFragment = new MySeatFragment();
-                    getParentFragmentManager().beginTransaction()
-                            .replace(R.id.fragment_container, mySeatFragment)
-                            .addToBackStack(null)
-                            .commit();
-                }
-            });
-        }
-        else {
-            button_seat.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    MySeatFragment mySeatFragment = new MySeatFragment();
-                    getParentFragmentManager().beginTransaction()
-                            .replace(R.id.fragment_container, mySeatFragment)
-                            .addToBackStack(null)
-                            .commit();
-                }
-            });
-        }
+//        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("Seat", Context.MODE_PRIVATE);
+//        int seat_num = sharedPreferences.getInt("seat_num", -1);
+        button_seat_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MySeatFragment mySeatFragment = new MySeatFragment();
+                getParentFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, mySeatFragment)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
         button_qr.setOnClickListener(new View.OnClickListener() {
             @Override
