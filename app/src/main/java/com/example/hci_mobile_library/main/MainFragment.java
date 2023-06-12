@@ -15,6 +15,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.example.hci_mobile_library.option.OptionFragment;
 import com.example.hci_mobile_library.seat.MySeatFragment;
 import com.example.hci_mobile_library.R;
+import com.example.hci_mobile_library.seat.SeatRegisterationFragment;
 
 public class MainFragment extends Fragment implements View.OnClickListener {
 
@@ -30,9 +31,10 @@ public class MainFragment extends Fragment implements View.OnClickListener {
 
         ImageButton option_button = view.findViewById(R.id.button_options);
 
+        Button button_myseat = view.findViewById(R.id.button_myseat);
         Button button_seat_register = view.findViewById(R.id.button_seat_register);
         Button button_qr = view.findViewById(R.id.button_qr);
-        Button button_notify = view.findViewById(R.id.button_notify);
+        Button button_call = view.findViewById(R.id.button_call);
         Button button_search = view.findViewById(R.id.button_search);
         ViewPager viewPager = view.findViewById(R.id.view_pager);
 
@@ -50,14 +52,23 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-//        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("Seat", Context.MODE_PRIVATE);
-//        int seat_num = sharedPreferences.getInt("seat_num", -1);
-        button_seat_register.setOnClickListener(new View.OnClickListener() {
+        button_myseat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MySeatFragment mySeatFragment = new MySeatFragment();
                 getParentFragmentManager().beginTransaction()
                         .replace(R.id.fragment_container, mySeatFragment)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+
+        button_seat_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SeatRegisterationFragment seatRegisterationFragment = new SeatRegisterationFragment();
+                getParentFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, seatRegisterationFragment)
                         .addToBackStack(null)
                         .commit();
             }
@@ -74,7 +85,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        button_notify.setOnClickListener(new View.OnClickListener() {
+        button_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MySeatFragment mySeatFragment = new MySeatFragment();
