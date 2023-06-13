@@ -10,7 +10,7 @@
         android:layout_height="55dp"
         android:orientation="horizontal"
         android:gravity="fill_horizontal"
-        android:background="@color/blue1">
+        android:background="@color/base_blue">
 
         <ImageButton
             android:id="@+id/button_back_register"
