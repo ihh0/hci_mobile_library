@@ -4,39 +4,135 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFBFB"
-    android:backgroundTint="@color/white"
+    android:background="@color/light_gray"
     android:orientation='vertical'
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#3F51B5"
-        android:drawableLeft="@android:drawable/ic_menu_preferences"
-        android:text="  환경설정"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:textSize="24sp" />
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:background="@color/base_blue">
 
+        <ImageButton
+            android:id="@+id/button_back_options"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView_options"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Options"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/imageView_profile"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:background="@color/gray"
+            android:padding="5dp"
+            app:srcCompat="@drawable/profile" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView_student_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student name"
+                    android:textSize="26dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView_student_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="student number"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:id="@+id/textView_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="department" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Log out"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/transparent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"/>
+
+
+    </LinearLayout>
 
     <Button
         android:textStyle="bold"
         android:textAlignment="center"
-        android:id="@+id/notice"
+        android:id="@+id/button_add_picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:drawableLeft="@android:drawable/ic_menu_info_details"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:text='공지사항'
-        android:textSize="16sp" />
+        android:drawableLeft="@drawable/ic_picture"
+        android:drawableRight="@drawable/ic_forward"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="4dp"
+        android:text='사진등록'
+        android:textSize="16dp" />
 
-    <View
+    <Button
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:id="@+id/button_notice"
         android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#4165697A" />
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_info"
+        android:drawableRight="@drawable/ic_forward"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="4dp"
+        android:text='공지사항'
+        android:textSize="16dp" />
 
     <Button
         android:textStyle="bold"
@@ -45,77 +141,29 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        android:drawableLeft="@android:drawable/ic_menu_help"
-        android:drawableRight="@android:drawable/ic_media_play"
+        android:drawableLeft="@drawable/ic_help"
+        android:drawableRight="@drawable/ic_forward"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="4dp"
         android:text='이용 안내'
-        android:textSize="16sp" />
+        android:textSize="16dp" />
 
-    <View
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#4165697A" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:id="@+id/picture"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:drawableLeft="@android:drawable/ic_menu_gallery"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:text='사진등록'
-        android:textSize="16sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#4165697A" />
-
-    <Button
-        android:id="@+id/language"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:drawableLeft="@android:drawable/ic_menu_sort_alphabetically"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:text='언어설정'
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#4165697A" />
-
-    <Button
-        android:textStyle="bold"
-        android:id="@+id/Logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:drawableLeft="@android:drawable/ic_lock_power_off"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:text='로그아웃'
-        android:textAlignment="center"
-        android:textSize="16sp" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:background="#4165697A" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="59dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:ems="10"
-        android:gravity="right"
-        android:inputType="text"
-        android:text="ver: 8.9"
-        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/TextView_version"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:ems="10"
+            android:text="ver: 8.9"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </LinearLayout>
