@@ -39,7 +39,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         Button button_seat_register = view.findViewById(R.id.button_seat_register);
         Button button_qr = view.findViewById(R.id.button_qr);
         Button button_search = view.findViewById(R.id.button_search);
-        Button button_takeout = view.findViewById(R.id.button_borrow);
+        Button button_takeout = view.findViewById(R.id.button_rent);
 
         Button button_web = view.findViewById(R.id.button_weblink);
         Button button_inst = view.findViewById(R.id.button_inst);
