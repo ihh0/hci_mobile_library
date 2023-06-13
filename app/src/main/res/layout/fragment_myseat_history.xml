@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:orientation="horizontal"
+        android:background="@color/base_blue"
         android:gravity="fill_horizontal"
-        android:background="@color/base_blue">
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton_back_seat_history"
@@ -25,8 +26,12 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="Seat usage history"
-            android:textSize="16dp"
-            android:textColor="@color/white"/>
+            android:textColor="@color/white"
+            android:textSize="16dp" />
 
     </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

@@ -117,12 +117,12 @@
 
 
             <Button
-                android:id="@+id/button_takeout"
+                android:id="@+id/button_borrow"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@color/white"
-                android:text="isbm"
+                android:text="borrow"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
 

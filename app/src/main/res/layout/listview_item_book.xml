@@ -66,6 +66,8 @@
     <View
         android:layout_width="wrap_content"
         android:layout_height="2dp"
-        android:background="@color/gray"/>
+        android:background="@color/gray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
 
 </LinearLayout>
