@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,22 +8,53 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:background="@color/base_blue">
+
+        <ImageButton
+            android:id="@+id/button_seat_history"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView_seat_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Seat history"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/button_history"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/ic_clock" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button_history"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="기록" />
 
-        <FrameLayout
-            android:id="@+id/myseat_container"
+        <ListView
+            android:id="@+id/list_seat_history"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </FrameLayout>
-
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </LinearLayout>

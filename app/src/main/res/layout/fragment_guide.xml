@@ -13,25 +13,26 @@
         android:background="@color/base_blue">
 
         <ImageButton
-            android:id="@+id/button_back_register"
+            android:id="@+id/button_back_guide"
             android:layout_width="55dp"
             android:layout_height="match_parent"
             android:background="@color/transparent"
             app:srcCompat="@drawable/ic_back" />
 
         <TextView
-            android:id="@+id/textView_register"
+            android:id="@+id/textView_guide"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Seat Registeration"
+            android:text="Guide"
             android:textSize="16dp"
             android:textColor="@color/white"/>
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/list_seat"
+    <ImageView
+        android:id="@+id/imageView_guide_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/guide_main" />
 
 </LinearLayout>

@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
@@ -23,13 +22,13 @@ public class SeatRegisterationFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_seat_registration, container, false);
 
-        ImageButton button_back = view.findViewById(R.id.button_back_register);
+        ImageButton back = view.findViewById(R.id.button_back_register);
 
-        ListView listView = view.findViewById(R.id.seat_list);
+        ListView listView = view.findViewById(R.id.list_seat);
         SeatListAdapter adapter = new SeatListAdapter();
         listView.setAdapter(adapter);
 
-        button_back.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getActivity().onBackPressed();

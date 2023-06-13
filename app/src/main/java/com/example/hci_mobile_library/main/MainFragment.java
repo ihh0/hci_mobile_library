@@ -34,8 +34,13 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         Button button_myseat = view.findViewById(R.id.button_myseat);
         Button button_seat_register = view.findViewById(R.id.button_seat_register);
         Button button_qr = view.findViewById(R.id.button_qr);
-        Button button_call = view.findViewById(R.id.button_call);
         Button button_search = view.findViewById(R.id.button_search);
+        Button button_takeout = view.findViewById(R.id.button_takeout);
+
+        Button button_web = view.findViewById(R.id.button_weblink);
+        Button button_inst = view.findViewById(R.id.button_inst);
+        Button button_call = view.findViewById(R.id.button_call);
+
         ViewPager viewPager = view.findViewById(R.id.view_pager);
 
         ViewpagerAdapter adapter = new ViewpagerAdapter(items);        // 어댑터 생성. 아이템 리스트를 파라미터로 넣어준다.

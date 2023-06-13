@@ -16,4 +16,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/qr" />
+
+    <ImageButton
+        android:id="@+id/imageButton_close_qr"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close"
+        android:scaleX="1.7"
+        android:scaleY="1.7"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
