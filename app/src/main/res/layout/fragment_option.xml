@@ -16,7 +16,7 @@
         android:background="@color/base_blue">
 
         <ImageButton
-            android:id="@+id/button_back_options"
+            android:id="@+id/imageButton_back_options"
             android:layout_width="55dp"
             android:layout_height="match_parent"
             android:background="@color/transparent"

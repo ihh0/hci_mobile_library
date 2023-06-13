@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="사용 기록 프래그먼트" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="fill_horizontal"
+        android:background="@color/base_blue">
+
+        <ImageButton
+            android:id="@+id/imageButton_back_seat_history"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textView_seat_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Seat usage history"
+            android:textSize="16dp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
 </LinearLayout>

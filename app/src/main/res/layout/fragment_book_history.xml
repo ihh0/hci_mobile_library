@@ -8,31 +8,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:orientation="horizontal"
+        android:background="@color/base_blue"
         android:gravity="fill_horizontal"
-        android:background="@color/base_blue">
+        android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButton_back_guide"
+            android:id="@+id/imageButton_back_book_history"
             android:layout_width="55dp"
             android:layout_height="match_parent"
             android:background="@color/transparent"
             app:srcCompat="@drawable/ic_back" />
 
         <TextView
-            android:id="@+id/textView_guide"
+            android:id="@+id/textView_book_history"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Guide"
-            android:textSize="16dp"
-            android:textColor="@color/white"/>
+            android:text="History"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView_guide_main"
+
+    <ListView
+        android:id="@+id/list_book_history"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/guide_main" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>

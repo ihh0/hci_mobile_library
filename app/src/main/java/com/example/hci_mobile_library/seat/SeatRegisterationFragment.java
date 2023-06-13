@@ -22,7 +22,7 @@ public class SeatRegisterationFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_seat_registration, container, false);
 
-        ImageButton back = view.findViewById(R.id.button_back_register);
+        ImageButton back = view.findViewById(R.id.imageButton_back_register);
 
         ListView listView = view.findViewById(R.id.list_seat);
         SeatListAdapter adapter = new SeatListAdapter();

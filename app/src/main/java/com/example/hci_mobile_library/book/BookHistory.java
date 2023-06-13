@@ -1,4 +1,4 @@
-package com.example.hci_mobile_library.option;
+package com.example.hci_mobile_library.book;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,14 +10,13 @@ import androidx.fragment.app.Fragment;
 
 import com.example.hci_mobile_library.R;
 
-public class GuideFragment extends Fragment {
+public class BookHistory extends Fragment {
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_guide, container, false);
+        View view = inflater.inflate(R.layout.fragment_book_history, container, false);
 
-        ImageButton back = view.findViewById(R.id.imageButton_back_guide);
+        ImageButton back = view.findViewById(R.id.imageButton_back_book_history);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

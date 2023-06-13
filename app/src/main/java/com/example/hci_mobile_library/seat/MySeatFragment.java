@@ -1,10 +1,12 @@
 package com.example.hci_mobile_library.seat;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 
@@ -12,8 +14,6 @@ import com.example.hci_mobile_library.R;
 
 public class MySeatFragment extends Fragment {
 
-//    FragmentManager fragmentManager = getChildFragmentManager();
-//    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
     public MySeatFragment() {
         // Required empty public constructor
@@ -24,9 +24,17 @@ public class MySeatFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_myseat, container, false);
 
-        Button buttonToFragment1 = view.findViewById(R.id.button_history);
+        ImageButton back = view.findViewById(R.id.imageButton_back_myseat);
+        ImageButton history = view.findViewById(R.id.imageButton_history);
 
-        buttonToFragment1.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().onBackPressed();
+            }
+        });
+
+        history.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 MySeatHistoryFragment historyFragment = new MySeatHistoryFragment();

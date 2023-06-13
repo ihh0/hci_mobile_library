@@ -86,7 +86,7 @@ public class OptionFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_option, container, false);
 
-        ImageButton back = view.findViewById(R.id.button_back_options);
+        ImageButton back = view.findViewById(R.id.imageButton_back_options);
 
         profile = view.findViewById(R.id.imageView_profile);
 
@@ -133,11 +133,8 @@ public class OptionFragment extends Fragment {
         notice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                OptionFragment optionFragment = new OptionFragment();
-                getParentFragmentManager().beginTransaction()
-                        .replace(R.id.fragment_container, optionFragment)
-                        .addToBackStack(null)
-                        .commit();
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://dl.jbnu.ac.kr/bbs/list/1?subject_code=1&mId=30401000"));
+                startActivity(intent);
             }
         });
 
