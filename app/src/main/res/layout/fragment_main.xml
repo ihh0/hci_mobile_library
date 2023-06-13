@@ -84,7 +84,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="9"
                     android:background="@color/white"
-                    android:text="@string/my_seat" />
+                    android:text="@string/my_seat"
+                    android:textSize="24dp"/>
 
                 <Space
                     android:layout_width="16dp"
@@ -103,7 +104,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/white"
-                        android:text="@string/qr_code" />
+                        android:text="@string/qr_code"
+                        android:textSize="24dp"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -116,7 +118,8 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/white"
-                        android:text="@string/get_seat" />
+                        android:text="@string/get_seat"
+                        android:textSize="24dp"/>
                 </LinearLayout>
 
                 <Space
@@ -139,7 +142,8 @@
                     android:layout_marginLeft="16dp"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="@string/search" />
+                    android:text="@string/search"
+                    android:textSize="24dp"/>
 
 
                 <Button
@@ -150,7 +154,8 @@
                     android:layout_marginRight="16dp"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="@string/rent" />
+                    android:text="@string/rent"
+                    android:textSize="24dp"/>
 
 
             </LinearLayout>

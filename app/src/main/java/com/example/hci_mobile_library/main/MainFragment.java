@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.hci_mobile_library.book.RentFragment;
 import com.example.hci_mobile_library.book.SearchFragment;
 import com.example.hci_mobile_library.option.OptionFragment;
 import com.example.hci_mobile_library.seat.MySeatFragment;
@@ -101,16 +102,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-//        button_call.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                MySeatFragment mySeatFragment = new MySeatFragment();
-//                getParentFragmentManager().beginTransaction()
-//                        .replace(R.id.fragment_container, mySeatFragment)
-//                        .addToBackStack(null)
-//                        .commit();
-//            }
-//        });
 
         button_search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,16 +114,16 @@ public class MainFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-//        button_takeout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                MySeatFragment mySeatFragment = new MySeatFragment();
-//                getParentFragmentManager().beginTransaction()
-//                        .replace(R.id.fragment_container, mySeatFragment)
-//                        .addToBackStack(null)
-//                        .commit();
-//            }
-//        });
+        button_rent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                RentFragment rentFragment = new RentFragment();
+                getParentFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, rentFragment)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
 
         button_web.setOnClickListener(new View.OnClickListener() {
             @Override
