@@ -20,7 +20,7 @@ import com.example.hci_mobile_library.seat.SeatRegisterationFragment;
 
 public class MainFragment extends Fragment implements View.OnClickListener {
 
-    private String[] items = {"Page 1", "Page 2"};
+    private int[] items = {R.drawable.banner01, R.drawable.banner02};
 
     public MainFragment() {
         // Required empty public constructor
@@ -39,7 +39,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         Button button_seat_register = view.findViewById(R.id.button_seat_register);
         Button button_qr = view.findViewById(R.id.button_qr);
         Button button_search = view.findViewById(R.id.button_search);
-        Button button_takeout = view.findViewById(R.id.button_rent);
+        Button button_rent = view.findViewById(R.id.button_rent);
 
         Button button_web = view.findViewById(R.id.button_weblink);
         Button button_inst = view.findViewById(R.id.button_inst);

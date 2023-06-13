@@ -63,7 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="32dp"
                     android:background="@color/transparent"
-                    android:text="more" />
+                    android:text="@string/more" />
 
             </LinearLayout>
 
@@ -84,7 +84,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="9"
                     android:background="@color/white"
-                    android:text="my seat" />
+                    android:text="@string/my_seat" />
 
                 <Space
                     android:layout_width="16dp"
@@ -103,7 +103,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/white"
-                        android:text="qr code" />
+                        android:text="@string/qr_code" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -116,7 +116,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/white"
-                        android:text="get seat" />
+                        android:text="@string/get_seat" />
                 </LinearLayout>
 
                 <Space
@@ -139,7 +139,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="search" />
+                    android:text="@string/search" />
 
 
                 <Button
@@ -150,7 +150,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="rent" />
+                    android:text="@string/rent" />
 
 
             </LinearLayout>
@@ -173,7 +173,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="call" />
+                    android:text="@string/call" />
 
                 <Space
                     android:layout_width="16dp"
@@ -186,7 +186,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="Instagram" />
+                    android:text="@string/instagram" />
 
                 <Space
                     android:layout_width="16dp"
@@ -199,7 +199,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/white"
-                    android:text="Website" />
+                    android:text="@string/website" />
 
                 <Space
                     android:layout_width="16dp"

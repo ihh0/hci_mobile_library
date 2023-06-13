@@ -11,15 +11,15 @@ import androidx.viewpager.widget.PagerAdapter;
 import com.example.hci_mobile_library.R;
 
 public class ViewpagerAdapter extends PagerAdapter {
-    private String[] texts;
+    private int[] items;
 
-    public ViewpagerAdapter(String[] Items) {
-        this.texts = Items;
+    public ViewpagerAdapter(int[] Items) {
+        this.items = Items;
     }
 
     @Override
     public int getCount() {
-        return texts.length;
+        return items.length;
     }
 
     @Override
@@ -33,7 +33,10 @@ public class ViewpagerAdapter extends PagerAdapter {
         LayoutInflater inflater = LayoutInflater.from(container.getContext());
         View view = inflater.inflate(R.layout.mainviewpager_item, container, false);
         ImageView imageView = view.findViewById(R.id.view_pager_image);
-        imageView.setImageResource(R.drawable.ic_banner);
+
+        int item = items[position];
+
+        imageView.setImageResource(item);
         container.addView(view);
         return view;
     }
