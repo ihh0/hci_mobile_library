@@ -84,8 +84,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="9"
                     android:background="@color/white"
+                    android:drawableTop="@drawable/ic_baseline_chair_alt_24"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="48dp"
                     android:text="@string/my_seat"
-                    android:textSize="24dp"/>
+                    android:textSize="24dp" />
 
                 <Space
                     android:layout_width="16dp"
@@ -105,7 +108,10 @@
                         android:layout_weight="1"
                         android:background="@color/white"
                         android:text="@string/qr_code"
-                        android:textSize="24dp"/>
+                        android:textSize="16dp"
+                        android:drawableLeft="@drawable/ic_baseline_qr_code_24"
+                        android:paddingLeft="12dp"
+                        android:gravity="center"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -119,7 +125,10 @@
                         android:layout_weight="1"
                         android:background="@color/white"
                         android:text="@string/get_seat"
-                        android:textSize="24dp"/>
+                        android:textSize="16dp"
+                        android:drawableLeft="@drawable/ic_baseline_airline_seat_recline_normal_24"
+                        android:paddingLeft="12dp"
+                        android:gravity="center"/>
                 </LinearLayout>
 
                 <Space
@@ -142,8 +151,11 @@
                     android:layout_marginLeft="16dp"
                     android:layout_weight="1"
                     android:background="@color/white"
+                    android:drawableTop="@drawable/ic_baseline_manage_search_24"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="14dp"
                     android:text="@string/search"
-                    android:textSize="24dp"/>
+                    android:textSize="22dp"/>
 
 
                 <Button
@@ -154,8 +166,11 @@
                     android:layout_marginRight="16dp"
                     android:layout_weight="1"
                     android:background="@color/white"
+                    android:drawableTop="@drawable/ic_baseline_menu_book_24"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="14dp"
                     android:text="@string/rent"
-                    android:textSize="24dp"/>
+                    android:textSize="22dp"/>
 
 
             </LinearLayout>
@@ -165,46 +180,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="16dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:gravity="center">
 
                 <Space
                     android:layout_width="16dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/button_call"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:text="@string/call" />
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_baseline_call_24"/>
 
                 <Space
-                    android:layout_width="16dp"
+                    android:layout_width="32dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/button_inst"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:text="@string/instagram" />
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_inst"/>
 
                 <Space
-                    android:layout_width="16dp"
+                    android:layout_width="32dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0" />
 
-                <Button
+                <ImageButton
                     android:id="@+id/button_weblink"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:text="@string/website" />
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_baseline_web_24"/>
 
                 <Space
                     android:layout_width="16dp"

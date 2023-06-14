@@ -51,9 +51,9 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         Button button_search = view.findViewById(R.id.button_search);
         Button button_rent = view.findViewById(R.id.button_rent);
 
-        Button button_web = view.findViewById(R.id.button_weblink);
-        Button button_inst = view.findViewById(R.id.button_inst);
-        Button button_call = view.findViewById(R.id.button_call);
+        ImageButton button_web = view.findViewById(R.id.button_weblink);
+        ImageButton button_inst = view.findViewById(R.id.button_inst);
+        ImageButton button_call = view.findViewById(R.id.button_call);
 
 
         ViewpagerAdapter adapter = new ViewpagerAdapter(items);        // 어댑터 생성. 아이템 리스트를 파라미터로 넣어준다.
