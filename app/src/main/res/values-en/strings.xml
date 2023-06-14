@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">hci_mobile_library</string>
+
+    <string name="book_history">Book History</string>
+    <string name="guide">Guide</string>
+    <string name="more">More</string>
+    <string name="my_seat">My Seat</string>
+    <string name="qr_code">QR Code</string>
+    <string name="get_seat">Get Seat</string>
+    <string name="search">Search Books/Papers</string>
+    <string name="rent">Rent Books</string>
+    <string name="call">Make a Call</string>
+    <string name="instagram">Instagram</string>
+    <string name="website">Website</string>
+    <string name="seat_usage_history">Seat Usage History</string>
+    <string name="options">Settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="add_image">Add Image</string>
+    <string name="notice">Notice</string>
+    <string name="rent1">Mobile Book Rental Guide</string>
+    <string name="rent2">1. Press the [Enter Code] button and enter the book\'s ISBN number. \n2. Press the [Scan] button and scan the barcode on the book's front cover.</string>
+    <string name="rent3">Mobile Book Rental Eligibility</string>
+    <string name="rent4">Books available for rental in the Central Library</string>
+    <string name="rent5">Notes</string>
+    <string name="rent6">- Mobile rental is only available within the Central Library on the 2nd and 3rd floors. \n- For accompanying materials or appendices, please inquire at the Information Desk. \n- Not available for rental: multimedia materials, reference materials, magazines, and other serial publications.</string>
+    <string name="rent7">Inquiries</string>
+    <string name="rent8">063-270-4404 (Rental)\n063-270-3457 (System)</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="scan">Scan with Camera</string>
+    <string name="search_hint">Enter search keyword</string>
+    <string name="seat_registeration">Seat Registration</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">hci_mobile_library</string>
+
+    <string name="book_history">借阅历史</string>
+    <string name="guide">使用指南</string>
+    <string name="more">更多</string>
+    <string name="my_seat">我的座位</string>
+    <string name="qr_code">QR码</string>
+    <string name="get_seat">选座</string>
+    <string name="search">图书/论文搜索</string>
+    <string name="rent">借阅图书</string>
+    <string name="call">拨打电话</string>
+    <string name="instagram">Instagram</string>
+    <string name="website">网站</string>
+    <string name="seat_usage_history">座位使用历史</string>
+    <string name="options">设置</string>
+    <string name="log_out">注销</string>
+    <string name="add_image">添加图片</string>
+    <string name="notice">公告</string>
+    <string name="rent1">移动图书借阅指南</string>
+    <string name="rent2">1. 点击[输入编号]按钮，输入图书的ISBN编号。 \n2. 点击[扫描]按钮，使用相机扫描图书封面上的条形码。</string>
+    <string name="rent3">移动图书借阅资格</string>
+    <string name="rent4">中央图书馆可借阅的图书</string>
+    <string name="rent5">注意事项</string>
+    <string name="rent6">- 移动借阅仅适用于中央图书馆的2楼和3楼。 \n- 对于附属资料或附录，请咨询信息台。 \n- 不可借阅的材料：多媒体资料，参考资料，杂志和其他连续出版物。</string>
+    <string name="rent7">咨询</string>
+    <string name="rent8">063-270-4404（借阅）\n063-270-3457（系统）</string>
+    <string name="enter_code">输入编号</string>
+    <string name="scan">使用相机扫描</string>
+    <string name="search_hint">请输入搜索关键词</string>
+    <string name="seat_registeration">选座注册</string>
+</resources>
