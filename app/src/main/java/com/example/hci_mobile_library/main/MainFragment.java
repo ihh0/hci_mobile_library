@@ -3,6 +3,7 @@ package com.example.hci_mobile_library.main;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,9 +20,17 @@ import com.example.hci_mobile_library.seat.MySeatFragment;
 import com.example.hci_mobile_library.R;
 import com.example.hci_mobile_library.seat.SeatRegisterationFragment;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class MainFragment extends Fragment implements View.OnClickListener {
 
     private int[] items = {R.drawable.banner01, R.drawable.banner02};
+
+    int currentPage = 0;
+    Timer timer;
+    final long DELAY_MS = 1000;//delay in milliseconds before task is to be executed
+    final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
 
     public MainFragment() {
         // Required empty public constructor
@@ -60,6 +69,25 @@ public class MainFragment extends Fragment implements View.OnClickListener {
                         .commit();
             }
         });
+        final Handler handler = new Handler();
+        final Runnable Update = new Runnable() {
+            @Override
+            public void run() {
+                if(currentPage >= 2) {
+                    currentPage = 0;
+                }
+                viewPager.setCurrentItem(currentPage++, true);
+            }
+        };
+
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, DELAY_MS, PERIOD_MS);
+
 
         button_more.setOnClickListener(new View.OnClickListener() {
             @Override
