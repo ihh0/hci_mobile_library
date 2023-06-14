@@ -19,7 +19,7 @@
     <string name="add_image">Add Image</string>
     <string name="notice">Notice</string>
     <string name="rent1">Mobile Book Rental Guide</string>
-    <string name="rent2">1. Press the [Enter Code] button and enter the book\'s ISBN number. \n2. Press the [Scan] button and scan the barcode on the book's front cover.</string>
+    <string name="rent2">1. Press the [Enter Code] button and enter the book\'s ISBN number. \n2. Press the [Scan] button and scan the barcode on the book\'s front cover.</string>
     <string name="rent3">Mobile Book Rental Eligibility</string>
     <string name="rent4">Books available for rental in the Central Library</string>
     <string name="rent5">Notes</string>
