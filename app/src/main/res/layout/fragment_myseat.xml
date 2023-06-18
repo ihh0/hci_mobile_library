@@ -78,22 +78,25 @@
                         android:id="@+id/textView_myseat_floor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Floor"
-                        android:textSize="24dp" />
+                        android:text="4F"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/textView_myseat_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Seat name"
-                        android:textSize="32dp" />
+                        android:text="제1열람실"
+                        android:textSize="32dp"
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/textView_myseat_num"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="number" />
+                        android:text="no. 164"
+                        android:textColor="@color/black" />
 
                 </LinearLayout>
 
@@ -119,13 +122,16 @@
                     android:id="@+id/textView_usage_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="yyyy.MM.dd\nHH:mm ~ HH:mm" />
+                    android:text="2023.06.29 \n13:45 ~ 19:45"
+                    android:textColor="@color/black" />
 
                 <ProgressBar
                     android:id="@+id/progressBar3"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:progress="80"
+                    android:progressTint="@color/base_blue"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -136,7 +142,8 @@
                         android:id="@+id/textView_usage_time_left"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="n minute(s) until expiration" />
+                        android:text="n minute(s) until expiration"
+                        android:textColor="@color/light_blue" />
 
                     <Space
                         android:layout_width="wrap_content"
